@@ -10,9 +10,9 @@ def main(player):
             print("Are you the (a)ttacker or (d)efender?")
             cchoice = input().lower()
             if cchoice == "a":          
-                Combat.fight(player, goblin)
+                Combat.fight(player, goblin, player)
             if cchoice == "d":
-                Combat.fight(goblin, player)
+                Combat.fight(goblin, player, player)
             player_choice = input("\nWhat would you like to do?\n" + choices + "\n").lower()
         else:
             print("That was not a valid input, try again")
